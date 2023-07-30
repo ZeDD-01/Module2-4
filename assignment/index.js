@@ -61,6 +61,26 @@ celToKel(173.13);
 celToKel(-13);
 */
 
+const celToFah = (celsius)=>{
+
+    let fahrenheit = ((celsius * 1.8) + 32).toFixed(2);
+    console.log(`${celsius} degrees in Celsius equals ${fahrenheit} in Fahrenheit`)
+}
+
+const celToKel = (celsius)=>{
+    let kelvin = (celsius + 273.15).toFixed(2);
+    console.log(`${celsius} degrees in Celsius equals ${kelvin} in Kelvin`)
+}
+
+celToFah(37.5);
+celToFah(-40);
+celToFah(0);
+celToFah(100);
+celToKel(173.13);
+celToKel(-13);
+
+
+
 /* Q4. Create a function called pow that gets two values and computes for the power value of the two numbers
 pow(2, 3) -> 2 * 2 * 2 -> 8
 
