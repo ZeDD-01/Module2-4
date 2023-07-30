@@ -11,6 +11,25 @@ fizzBuzz(120); //FizzBuzz
 fizzBuzz(9999); //Fizz
 */
 
+const fizzBuzz = (number)=>{
+    if(number % 5 === 0 && number % 3 === 0){
+        console.log("FizzBuzz");
+    }else if(number % 3 === 0){
+        console.log("Fizz");
+    }else if(number % 5 === 0){
+        console.log("Buzz");
+    }else{
+        console.log("Pop")
+    }        
+}
+
+    fizzBuzz(49); //Pop
+    fizzBuzz(55); //Buzz
+    fizzBuzz(120); //FizzBuzz
+    fizzBuzz(9999); //Fizz
+
+
+
 /* Q2. Create a function called averager that gets the average of an array. */
 const prices = [12.99, 17.75, 88.12, 111.11, 77.09, 53.45];
 //let result = averager(prices);
