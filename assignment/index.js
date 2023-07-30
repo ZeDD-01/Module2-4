@@ -35,6 +35,21 @@ const prices = [12.99, 17.75, 88.12, 111.11, 77.09, 53.45];
 //let result = averager(prices);
 //console.log(result);
 
+const averager = (array)=>{
+
+    let sum = 0;
+    array.map((number)=>{
+        sum = sum + number;
+    })
+
+    let average = sum / array.length;
+    let rounded = average.toFixed(3);
+
+    console.log("Average is: " + rounded);
+}
+
+averager(prices);
+
 
 /* Q3. Create functions that would convert temperature from Celsius to Fahrenheit and Kelvin. Round the result to two decimal places. 
 
