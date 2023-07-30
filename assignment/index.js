@@ -86,3 +86,15 @@ pow(2, 3) -> 2 * 2 * 2 -> 8
 
 Note: You can not use Math.pow function. You need to write your own implementation of the function.
 */
+
+const pow = (num1, num2)=>{
+    let result = 1;
+    for(let i = 0; i < num2; i++){
+        result = result * num1;
+    }
+    console.log(`The result of the power value of ${num1} and ${num2} is ${result}`);
+}
+
+pow(2,3);
+pow(16,8);
+pow(2,8);
